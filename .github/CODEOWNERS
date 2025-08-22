@@ -1,0 +1,39 @@
+# CODEOWNERS file for payment-utility-114
+# Global owners - will be requested for all PRs
+* @Armor-test/grp-api @Armor-test/squad-mobile @Armor-test/squad-ml
+
+# Directory ownership
+/models/ @Armor-test/squad-reporting @Armor-test/grp-reporting
+/dist/ @Armor-test/squad-cache @Armor-test/squad-performance @Armor-test/squad-mobile
+/styles/ @Armor-test/squad-mobile @Armor-test/dept-ui
+/public/ @Armor-test/dept-reliability @Armor-test/dept-release
+/plugins/ @Armor-test/team-logging @Armor-test/unit-governance @Armor-test/dept-release
+/ui/ @Armor-test/grp-ui @Armor-test/squad-payments @Armor-test/dept-reporting
+/deploy/ @Armor-test/dept-automation @Armor-test/grp-api @Armor-test/squad-payments
+/components/ @Armor-test/squad-research @Armor-test/dept-reliability @Armor-test/team-core
+/test/ @Armor-test/team-notifications @Armor-test/team-research @Armor-test/dept-test
+/tests/ @Armor-test/squad-cache @Armor-test/unit-design
+/assets/ @Armor-test/unit-governance @Armor-test/squad-cache
+/helpers/ @Armor-test/squad-cloud @Armor-test/squad-product
+/api/ @Armor-test/squad-payments @Armor-test/team-security
+
+# File type ownership
+*.properties @Armor-test/team-core @Armor-test/dept-notifications
+*.toml @Armor-test/squad-apps @Armor-test/squad-research
+*.config @Armor-test/team-reporting @Armor-test/team-security
+*.js @Armor-test/dept-billing @Armor-test/squad-apps @Armor-test/unit-design
+*.cpp @Armor-test/squad-apps @Armor-test/dept-api @Armor-test/dept-reliability
+*.scala @Armor-test/team-security @Armor-test/dept-api
+*.ts @Armor-test/dept-reporting @Armor-test/grp-storage
+*.lock @Armor-test/grp-storage @Armor-test/squad-mobile @Armor-test/squad-ux
+*.sh @Armor-test/squad-ml @Armor-test/team-research
+*.py @Armor-test/grp-reporting @Armor-test/squad-mobile
+*.cs @Armor-test/squad-performance @Armor-test/squad-ux
+*.graphql @Armor-test/dept-data @Armor-test/squad-api
+*.html @Armor-test/dept-api @Armor-test/dept-billing @Armor-test/dept-reliability
+
+# Security and special files
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
+package.json @Armor-test/dependency-team @Armor-test/security
+Dockerfile @Armor-test/devops @Armor-test/infra
